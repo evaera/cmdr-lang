@@ -1,0 +1,36 @@
+{
+  "name": "cmdr-lang",
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$className": "Workspace",
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Size": [
+            200,
+            5,
+            200
+          ],
+          "Anchored": true
+        }
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "CmdrLang": {
+        "$path": "src"
+      },
+      "$path": "Packages"
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "run": {
+        "$path": "./testRunner/runTests.server.lua"
+      },
+      "example": {
+        "$path": "./example/server"
+      }
+    }
+  }
+}
